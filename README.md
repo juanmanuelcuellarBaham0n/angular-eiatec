@@ -11,8 +11,7 @@ Se muestra la estructura que se planteo para esta prueba tecnica
   style="display: inline-block; margin: 0 auto; max-width: 300px"/>
 
 
-# Requerimientos
-
+# Requisitos
 ```
 npm i -g @ionic/cli
 ```
