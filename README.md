@@ -12,16 +12,13 @@ angular-eiatec/
 |	|	|__ styles.scss
 |	|	|__ variables.scss
 |	|	|__ main.scss
-|   |   |
 |	|__ environments
 |	|	|__ environment.prod.ts
 |	|	|__ environment.ts
-|	|
 |	|__ assets
 |	|	|__ icon
 |   |   |   |__ favicon.png
 |   |   |__ shapes.svg    
-|	|
 |	|__ app
 |	|	|__ home
 |   |   |   |__ service
