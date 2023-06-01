@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-button size="small" fill="outline" (click)="createRow()">Crear</ion-button>
+  <ngx-datatable
+    class="material"
+    [limit]="10"
+    [rows]="data"
+    [rowHeight]="'auto'"
+    [columns]="columns"
+    [columnMode]="'force'"
+    [headerHeight]="50"
+    [footerHeight]="50"
+  >
+    <ngx-datatable-column name="Clase" prop="clase"></ngx-datatable-column>
+    <ngx-datatable-column name="Dia" prop="dia"></ngx-datatable-column>
+    <ngx-datatable-column name="Begin" prop="begin"></ngx-datatable-column>
+    <ngx-datatable-column name="Ends" prop="ends"></ngx-datatable-column>
+    <ngx-datatable-column name="Actions" prop="actions">
+        <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+            <ion-button size="small" fill="outline" (click)="editRow(row)">Editar</ion-button>
+            <ion-button size="small" fill="outline" (click)="deleteRow(row)">Eliminar</ion-button>
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-footer>
+      <ng-template 
+        ngx-datatable-footer-template 
+        let-rowCount="rowCount"
+        let-pageSize="pageSize"
+        let-selectedCount="selectedCount"
+        let-curPage="curPage"
+        let-offset="offset"
+      >
+          <ion-button (click)="previousPage()">Atras</ion-button>
+          <ion-button (click)="nextPage()">Siguiente</ion-button>
+      </ng-template>
+    </ngx-datatable-footer>
+
+  </ngx-datatable>
+</ion-content>

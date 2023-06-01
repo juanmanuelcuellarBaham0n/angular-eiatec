@@ -1,0 +1,31 @@
+<div class="modal-padding">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <ion-item>
+      <ion-label position="floating">Clase</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Dia</ion-label>
+      <ion-input type="text" formControlName="dia"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Begin</ion-label>
+      <ion-input type="text" formControlName="begin"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Ends</ion-label>
+      <ion-input type="text" formControlName="ends"></ion-input>
+    </ion-item>
+
+    <div class="margin-top">
+      <ion-button expand="full" type="submit">Confirmar</ion-button>
+      <ion-button expand="full" (click)="closeModal()">Cerrar</ion-button>
+    </div>
+
+  </form>
+
+</div>
