@@ -4,11 +4,16 @@
 
 Se muestra la estructura que se planteo para esta prueba tecnica
 
-```
+<img
+  src="./src/assets/estructura.png"
+  alt="Alt text"
+  title="Optional title"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
+
 angular-eiatec/
 |__ src
 |	|__ scss
-|	|	|__ global.scss
+|	|   |__ global.scss
 |	|	|__ styles.scss
 |	|	|__ variables.scss
 |	|	|__ main.scss
@@ -47,10 +52,16 @@ angular-eiatec/
 |	|	|__ app.component.spec.ts
 |	|	|__ app.component.ts
 |	|	|__ app.module.ts
-```
+
 
 # Requerimientos
 
 ```
 npm i -g @ionic/cli
+```
+# Ejecucion
+
+```
+npm install
+npm run start
 ```
